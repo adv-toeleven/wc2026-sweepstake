@@ -1,0 +1,52 @@
+{
+  "participants": [
+    { "name": "Anna Roberts", "initials": "AR", "teams": ["Brazil", "South Korea"] },
+    { "name": "Alexis de Vienne", "initials": "AV", "teams": ["France", "Scotland"] },
+    { "name": "James Forster", "initials": "JF", "teams": ["England", "Mexico"] },
+    { "name": "Joshua Sandhu", "initials": "JS", "teams": ["Netherlands", "USA"] },
+    { "name": "Andrew Wilsdorf", "initials": "AW", "teams": ["Spain", "Australia"] },
+    { "name": "Gerhard Malherbe", "initials": "GM", "teams": ["Germany", "Morocco"] },
+    { "name": "Ross Johnstone", "initials": "RJ", "teams": ["Argentina", "Canada"] },
+    { "name": "David Coleman", "initials": "DC", "teams": ["Portugal", "Switzerland"] },
+    { "name": "Maggie Tamcken", "initials": "MT", "teams": ["Belgium", "Qatar"] },
+    { "name": "Elson Sutanto", "initials": "ES", "teams": ["Sweden", "Bosnia"] },
+    { "name": "Hollie Bridgland", "initials": "HB", "teams": ["Norway", "Japan"] },
+    { "name": "Gwen Tugushi", "initials": "GT", "teams": ["Turkey", "Algeria", "Congo DR"] },
+    { "name": "Clare Keane-Hedges", "initials": "CK", "teams": ["Uruguay", "Iran"] },
+    { "name": "Jordan", "initials": "JO", "teams": ["Austria", "New Zealand"] },
+    { "name": "Kevin Smith", "initials": "KS", "teams": ["Colombia", "Senegal"] },
+    { "name": "Omar Sanchez", "initials": "OS", "teams": ["Czechia", "Cape Verde"] },
+    { "name": "Victoria Lutak", "initials": "VL", "teams": ["Saudi Arabia", "Ecuador"] },
+    { "name": "Simon Pearce", "initials": "SP", "teams": ["Cote d'Ivoire", "Egypt"] },
+    { "name": "Dmitrijus Drozdovas", "initials": "DD", "teams": ["Paraguay", "Ghana"] },
+    { "name": "Daniel Weber", "initials": "DW", "teams": ["Uzbekistan", "Jordan"] },
+    { "name": "Robert Zapfel", "initials": "RZ", "teams": ["Tunisia", "Panama"] },
+    { "name": "Dominic von Trotha Taylor", "initials": "DT", "teams": ["Iraq", "Croatia"] },
+    { "name": "Celina Bellingham", "initials": "CB", "teams": ["South Africa", "Curacao", "Haiti"] }
+  ],
+  "groups": {
+    "A": ["Mexico", "South Korea", "Czechia", "South Africa"],
+    "B": ["Canada", "Switzerland", "Qatar", "Bosnia"],
+    "C": ["Brazil", "Morocco", "Scotland", "Haiti"],
+    "D": ["USA", "Paraguay", "Colombia", "Panama"],
+    "E": ["Germany", "Cote d'Ivoire", "Ecuador", "Curacao"],
+    "F": ["Netherlands", "Japan", "Sweden", "Tunisia"],
+    "G": ["Belgium", "Iran", "New Zealand", "Egypt"],
+    "H": ["Spain", "Saudi Arabia", "Uruguay", "Cape Verde"],
+    "I": ["France", "Iraq", "Norway", "Senegal"],
+    "J": ["Argentina", "Algeria", "Austria", "Jordan"],
+    "K": ["Portugal", "Turkey", "Ghana", "Uzbekistan"],
+    "L": ["England", "Croatia", "Australia", "Congo DR"]
+  },
+  "scoring": {
+    "groupWin": 3,
+    "groupDraw": 1,
+    "groupLoss": 0,
+    "roundOf32": 5,
+    "roundOf16": 10,
+    "quarterFinal": 15,
+    "semiFinal": 20,
+    "runnerUp": 25,
+    "winner": 40
+  }
+}
