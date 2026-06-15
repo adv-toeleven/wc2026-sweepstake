@@ -37,12 +37,16 @@ jobs:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
         run: |
           mkdir -p public
-          HTTP=$(curl -s -w "%{http_code}" -o public/matches.json \
+          # Never let a flaky API call fail the deploy — fall back to committed data.
+          HTTP=$(curl -s --retry 2 --retry-delay 3 -w "%{http_code}" -o /tmp/matches.json \
             -H "X-Auth-Token: $FOOTBALL_API_KEY" \
-            "https://api.football-data.org/v4/competitions/WC/matches")
+            "https://api.football-data.org/v4/competitions/WC/matches" || echo "000")
           echo "API responded with HTTP $HTTP"
-          if [ "$HTTP" != "200" ]; then
-            echo "::warning::API returned $HTTP — keeping previously committed matches.json"
+          if [ "$HTTP" = "200" ] && node -e "JSON.parse(require('fs').readFileSync('/tmp/matches.json')).matches.length" >/dev/null 2>&1; then
+            cp /tmp/matches.json public/matches.json
+            echo "Updated matches.json from API"
+          else
+            echo "::warning::API fetch failed (HTTP $HTTP) — keeping previously committed matches.json"
             git checkout -- public/matches.json 2>/dev/null || true
           fi
           node -e 'const d=require("./public/matches.json");console.log("matches:",d.matches.length,"played:",d.matches.filter(m=>m.status==="FINISHED").length)'
