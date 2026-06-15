@@ -3,30 +3,55 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Refresh live match data on a schedule (GitHub cron is best-effort, ~every 10 min).
+  schedule:
+    - cron: "*/10 * * * *"
+  # Allow manual "Run workflow" from the Actions tab.
+  workflow_dispatch:
 
 permissions:
   contents: write
+
+# Avoid overlapping deploys when a push and a scheduled run collide.
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install dependencies
         run: npm install
+
+      - name: Fetch live match data
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: |
+          mkdir -p public
+          HTTP=$(curl -s -w "%{http_code}" -o public/matches.json \
+            -H "X-Auth-Token: $FOOTBALL_API_KEY" \
+            "https://api.football-data.org/v4/competitions/WC/matches")
+          echo "API responded with HTTP $HTTP"
+          if [ "$HTTP" != "200" ]; then
+            echo "::warning::API returned $HTTP — keeping previously committed matches.json"
+            git checkout -- public/matches.json 2>/dev/null || true
+          fi
+          node -e 'const d=require("./public/matches.json");console.log("matches:",d.matches.length,"played:",d.matches.filter(m=>m.status==="FINISHED").length)'
 
       - name: Build
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist

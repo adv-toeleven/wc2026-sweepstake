@@ -1,9 +1,14 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import axios from "axios";
-import { API_BASE, FOOTBALL_API_KEY } from "../config";
 import { getCanonicalName } from "../utils/teamNameMap";
 
 const REFRESH_SECONDS = 60;
+
+// The data is fetched server-side by a scheduled GitHub Action (which holds the
+// API key as a secret) and written to a same-origin static file. The browser
+// reads that file — football-data.org does not send CORS headers, so the API
+// cannot be called directly from the browser.
+const DATA_URL = `${import.meta.env.BASE_URL}matches.json`;
 
 // Applies canonical sweepstake names to both teams of every match.
 function normalizeMatches(rawMatches) {
@@ -25,9 +30,8 @@ export function useMatches() {
 
   const fetchMatches = useCallback(async () => {
     try {
-      const res = await axios.get(`${API_BASE}/competitions/WC/matches`, {
-        headers: { "X-Auth-Token": FOOTBALL_API_KEY }
-      });
+      // Cache-bust so we always get the freshest file the Action published.
+      const res = await axios.get(DATA_URL, { params: { t: Date.now() } });
       const raw = res.data?.matches || [];
       setMatches(normalizeMatches(raw));
       setLastUpdated(new Date());
@@ -37,8 +41,8 @@ export function useMatches() {
       // Keep showing stale data if we already have some.
       const status = err.response?.status;
       const msg = status
-        ? `API error ${status}${status === 403 ? " — check your API key in src/config.js" : ""}`
-        : err.message || "Failed to fetch matches";
+        ? `Data error ${status} — match data file unavailable`
+        : err.message || "Failed to load match data";
       setError(msg);
     } finally {
       setLoading(false);
