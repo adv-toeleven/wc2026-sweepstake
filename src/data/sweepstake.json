@@ -1,8 +1,8 @@
 {
   "participants": [
-    { "name": "Anna Roberts", "initials": "AR", "teams": ["Brazil", "South Korea"] },
-    { "name": "Alexis de Vienne", "initials": "AV", "teams": ["France", "Scotland"] },
-    { "name": "James Forster", "initials": "JF", "teams": ["England", "Mexico"] },
+    { "name": "Anna Roberts", "initials": "AR", "teams": ["Brazil"] },
+    { "name": "Alexis de Vienne", "initials": "AV", "teams": ["France"] },
+    { "name": "James Forster", "initials": "JF", "teams": ["England"] },
     { "name": "Joshua Sandhu", "initials": "JS", "teams": ["Netherlands", "USA"] },
     { "name": "Andrew Wilsdorf", "initials": "AW", "teams": ["Spain"] },
     { "name": "Gerhard Malherbe", "initials": "GM", "teams": ["Germany", "Morocco"] },
@@ -24,7 +24,16 @@
     { "name": "Dominic von Trotha Taylor", "initials": "DT", "teams": ["Iraq", "Croatia"] },
     { "name": "Celina Bellingham", "initials": "CB", "teams": ["South Africa", "Curacao"] },
     { "name": "Dick Anning", "initials": "DA", "teams": ["Australia", "Canada"] },
-    { "name": "Trevor Willis", "initials": "TW", "teams": ["Congo DR", "Haiti"] }
+    { "name": "Trevor Willis", "initials": "TW", "teams": ["Congo DR", "Haiti"] },
+    { "name": "Aadam Zakria", "initials": "AZ", "teams": ["South Korea", "Netherlands"] },
+    { "name": "Jack Brinkhurst", "initials": "JB", "teams": ["Scotland", "Portugal"] },
+    { "name": "Kris Rimar", "initials": "KR", "teams": ["Mexico", "Germany"] },
+    { "name": "Michal Gluchaczka", "initials": "MG", "teams": ["Belgium", "Sweden"] },
+    { "name": "Ronnie Nielsen", "initials": "RN", "teams": ["Norway", "Japan"] },
+    { "name": "Ruby Lin", "initials": "RL", "teams": ["Colombia", "Senegal"] },
+    { "name": "Souheil Ben Slama", "initials": "SB", "teams": ["Switzerland", "USA"] },
+    { "name": "Mohamed Ayadi", "initials": "MA", "teams": ["Morocco", "Uruguay"] },
+    { "name": "Delphine Suku", "initials": "DS", "teams": ["Croatia", "Ecuador"] }
   ],
   "groups": {
     "A": ["Mexico", "South Korea", "Czechia", "South Africa"],
