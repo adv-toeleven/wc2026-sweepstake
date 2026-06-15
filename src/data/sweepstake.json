@@ -1,8 +1,8 @@
 {
   "participants": [
-    { "name": "Anna Roberts", "initials": "AR", "teams": ["Brazil"] },
-    { "name": "Alexis de Vienne", "initials": "AV", "teams": ["France"] },
-    { "name": "James Forster", "initials": "JF", "teams": ["England"] },
+    { "name": "Anna Roberts", "initials": "AR", "teams": ["Brazil", "South Korea"] },
+    { "name": "Alexis de Vienne", "initials": "AV", "teams": ["France", "Scotland"] },
+    { "name": "James Forster", "initials": "JF", "teams": ["England", "Mexico"] },
     { "name": "Joshua Sandhu", "initials": "JS", "teams": ["Netherlands", "USA"] },
     { "name": "Andrew Wilsdorf", "initials": "AW", "teams": ["Spain"] },
     { "name": "Gerhard Malherbe", "initials": "GM", "teams": ["Germany", "Morocco"] },
@@ -11,7 +11,7 @@
     { "name": "Maggie Tamcken", "initials": "MT", "teams": ["Belgium", "Qatar"] },
     { "name": "Elson Sutanto", "initials": "ES", "teams": ["Sweden", "Bosnia"] },
     { "name": "Hollie Bridgland", "initials": "HB", "teams": ["Norway", "Japan"] },
-    { "name": "Gwen Tugushi", "initials": "GT", "teams": ["Turkey", "Algeria", "Congo DR"] },
+    { "name": "Gwen Tugushi", "initials": "GT", "teams": ["Turkey", "Algeria"] },
     { "name": "Clare Keane-Hedges", "initials": "CK", "teams": ["Uruguay", "Iran"] },
     { "name": "Jordan", "initials": "JO", "teams": ["Austria", "New Zealand"] },
     { "name": "Kevin Smith", "initials": "KS", "teams": ["Colombia", "Senegal"] },
@@ -22,9 +22,9 @@
     { "name": "Daniel Weber", "initials": "DW", "teams": ["Uzbekistan", "Jordan"] },
     { "name": "Robert Zapfel", "initials": "RZ", "teams": ["Tunisia", "Panama"] },
     { "name": "Dominic von Trotha Taylor", "initials": "DT", "teams": ["Iraq", "Croatia"] },
-    { "name": "Celina Bellingham", "initials": "CB", "teams": ["South Africa", "Curacao", "Haiti"] },
-    { "name": "Dick Anning", "initials": "DA", "teams": ["Mexico", "Canada"] },
-    { "name": "Trevor Willis", "initials": "TW", "teams": ["Scotland", "Australia", "South Korea"] }
+    { "name": "Celina Bellingham", "initials": "CB", "teams": ["South Africa", "Curacao"] },
+    { "name": "Dick Anning", "initials": "DA", "teams": ["Australia", "Canada"] },
+    { "name": "Trevor Willis", "initials": "TW", "teams": ["Congo DR", "Haiti"] }
   ],
   "groups": {
     "A": ["Mexico", "South Korea", "Czechia", "South Africa"],
