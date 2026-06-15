@@ -1,12 +1,12 @@
 {
   "participants": [
-    { "name": "Anna Roberts", "initials": "AR", "teams": ["Brazil", "South Korea"] },
-    { "name": "Alexis de Vienne", "initials": "AV", "teams": ["France", "Scotland"] },
-    { "name": "James Forster", "initials": "JF", "teams": ["England", "Mexico"] },
+    { "name": "Anna Roberts", "initials": "AR", "teams": ["Brazil"] },
+    { "name": "Alexis de Vienne", "initials": "AV", "teams": ["France"] },
+    { "name": "James Forster", "initials": "JF", "teams": ["England"] },
     { "name": "Joshua Sandhu", "initials": "JS", "teams": ["Netherlands", "USA"] },
-    { "name": "Andrew Wilsdorf", "initials": "AW", "teams": ["Spain", "Australia"] },
+    { "name": "Andrew Wilsdorf", "initials": "AW", "teams": ["Spain"] },
     { "name": "Gerhard Malherbe", "initials": "GM", "teams": ["Germany", "Morocco"] },
-    { "name": "Ross Johnstone", "initials": "RJ", "teams": ["Argentina", "Canada"] },
+    { "name": "Ross Johnstone", "initials": "RJ", "teams": ["Argentina"] },
     { "name": "David Coleman", "initials": "DC", "teams": ["Portugal", "Switzerland"] },
     { "name": "Maggie Tamcken", "initials": "MT", "teams": ["Belgium", "Qatar"] },
     { "name": "Elson Sutanto", "initials": "ES", "teams": ["Sweden", "Bosnia"] },
@@ -22,7 +22,9 @@
     { "name": "Daniel Weber", "initials": "DW", "teams": ["Uzbekistan", "Jordan"] },
     { "name": "Robert Zapfel", "initials": "RZ", "teams": ["Tunisia", "Panama"] },
     { "name": "Dominic von Trotha Taylor", "initials": "DT", "teams": ["Iraq", "Croatia"] },
-    { "name": "Celina Bellingham", "initials": "CB", "teams": ["South Africa", "Curacao", "Haiti"] }
+    { "name": "Celina Bellingham", "initials": "CB", "teams": ["South Africa", "Curacao", "Haiti"] },
+    { "name": "Dick Anning", "initials": "DA", "teams": ["Mexico", "Canada"] },
+    { "name": "Trevor Willis", "initials": "TW", "teams": ["Scotland", "Australia", "South Korea"] }
   ],
   "groups": {
     "A": ["Mexico", "South Korea", "Czechia", "South Africa"],
