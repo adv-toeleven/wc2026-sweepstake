@@ -1,53 +1,341 @@
 {
   "participants": [
-    { "name": "Anna Roberts", "initials": "AR", "teams": ["Brazil"] },
-    { "name": "Alexis de Vienne", "initials": "AV", "teams": ["France"] },
-    { "name": "James Forster", "initials": "JF", "teams": ["England"] },
-    { "name": "Joshua Sandhu", "initials": "JS", "teams": ["Netherlands", "USA"] },
-    { "name": "Andrew Wilsdorf", "initials": "AW", "teams": ["Spain"] },
-    { "name": "Gerhard Malherbe", "initials": "GM", "teams": ["Germany", "Morocco"] },
-    { "name": "Ross Johnstone", "initials": "RJ", "teams": ["Argentina"] },
-    { "name": "David Coleman", "initials": "DC", "teams": ["Portugal", "Switzerland"] },
-    { "name": "Maggie Tamcken", "initials": "MT", "teams": ["Belgium", "Qatar"] },
-    { "name": "Elson Sutanto", "initials": "ES", "teams": ["Sweden", "Bosnia"] },
-    { "name": "Hollie Bridgland", "initials": "HB", "teams": ["Norway", "Japan"] },
-    { "name": "Gwen Tugushi", "initials": "GT", "teams": ["Turkey", "Algeria"] },
-    { "name": "Clare Keane-Hedges", "initials": "CK", "teams": ["Uruguay", "Iran"] },
-    { "name": "Jordan", "initials": "JO", "teams": ["Austria", "New Zealand"] },
-    { "name": "Kevin Smith", "initials": "KS", "teams": ["Colombia", "Senegal"] },
-    { "name": "Omar Sanchez", "initials": "OS", "teams": ["Czechia", "Cape Verde"] },
-    { "name": "Victoria Lutak", "initials": "VL", "teams": ["Saudi Arabia", "Ecuador"] },
-    { "name": "Simon Pearce", "initials": "SP", "teams": ["Cote d'Ivoire", "Egypt"] },
-    { "name": "Dmitrijus Drozdovas", "initials": "DD", "teams": ["Paraguay", "Ghana"] },
-    { "name": "Daniel Weber", "initials": "DW", "teams": ["Uzbekistan", "Jordan"] },
-    { "name": "Robert Zapfel", "initials": "RZ", "teams": ["Tunisia", "Panama"] },
-    { "name": "Dominic von Trotha Taylor", "initials": "DT", "teams": ["Iraq", "Croatia"] },
-    { "name": "Celina Bellingham", "initials": "CB", "teams": ["South Africa", "Curacao"] },
-    { "name": "Dick Anning", "initials": "DA", "teams": ["Australia", "Canada"] },
-    { "name": "Trevor Willis", "initials": "TW", "teams": ["Congo DR", "Haiti"] },
-    { "name": "Aadam Zakria", "initials": "AZ", "teams": ["South Korea", "Netherlands"] },
-    { "name": "Jack Brinkhurst", "initials": "JB", "teams": ["Scotland", "Portugal"] },
-    { "name": "Kris Rimar", "initials": "KR", "teams": ["Mexico", "Germany"] },
-    { "name": "Michal Gluchaczka", "initials": "MG", "teams": ["Belgium", "Sweden"] },
-    { "name": "Ronnie Nielsen", "initials": "RN", "teams": ["Norway", "Japan"] },
-    { "name": "Ruby Lin", "initials": "RL", "teams": ["Colombia", "Senegal"] },
-    { "name": "Souheil Ben Slama", "initials": "SB", "teams": ["Switzerland", "USA"] },
-    { "name": "Mohamed Ayadi", "initials": "MA", "teams": ["Morocco", "Uruguay"] },
-    { "name": "Delphine Suku", "initials": "DS", "teams": ["Croatia", "Ecuador"] }
+    {
+      "name": "Anna Roberts",
+      "initials": "AR",
+      "teams": [
+        "Belgium"
+      ]
+    },
+    {
+      "name": "Alexis de Vienne",
+      "initials": "AV",
+      "teams": [
+        "Netherlands"
+      ]
+    },
+    {
+      "name": "James Forster",
+      "initials": "JF",
+      "teams": [
+        "Algeria",
+        "Iran"
+      ]
+    },
+    {
+      "name": "Joshua Sandhu",
+      "initials": "JS",
+      "teams": [
+        "Germany"
+      ]
+    },
+    {
+      "name": "Andrew Wilsdorf",
+      "initials": "AW",
+      "teams": [
+        "Cape Verde",
+        "Austria"
+      ]
+    },
+    {
+      "name": "Gerhard Malherbe",
+      "initials": "GM",
+      "teams": [
+        "Bosnia",
+        "Japan"
+      ]
+    },
+    {
+      "name": "Ross Johnstone",
+      "initials": "RJ",
+      "teams": [
+        "Iraq",
+        "Qatar"
+      ]
+    },
+    {
+      "name": "David Coleman",
+      "initials": "DC",
+      "teams": [
+        "New Zealand",
+        "Ecuador"
+      ]
+    },
+    {
+      "name": "Maggie Tamcken",
+      "initials": "MT",
+      "teams": [
+        "Uzbekistan",
+        "Colombia"
+      ]
+    },
+    {
+      "name": "Elson Sutanto",
+      "initials": "ES",
+      "teams": [
+        "Ghana",
+        "Sweden"
+      ]
+    },
+    {
+      "name": "Hollie Bridgland",
+      "initials": "HB",
+      "teams": [
+        "Congo DR",
+        "Australia"
+      ]
+    },
+    {
+      "name": "Gwen Tugushi",
+      "initials": "GT",
+      "teams": [
+        "Congo DR",
+        "USA"
+      ]
+    },
+    {
+      "name": "Clare Keane-Hedges",
+      "initials": "CK",
+      "teams": [
+        "Argentina"
+      ]
+    },
+    {
+      "name": "Jordan",
+      "initials": "JO",
+      "teams": [
+        "Spain"
+      ]
+    },
+    {
+      "name": "Kevin Smith",
+      "initials": "KS",
+      "teams": [
+        "Curacao",
+        "Turkey"
+      ]
+    },
+    {
+      "name": "Omar Sanchez",
+      "initials": "OS",
+      "teams": [
+        "New Zealand",
+        "Tunisia"
+      ]
+    },
+    {
+      "name": "Victoria Lutak",
+      "initials": "VL",
+      "teams": [
+        "Mexico",
+        "Uruguay"
+      ]
+    },
+    {
+      "name": "Simon Pearce",
+      "initials": "SP",
+      "teams": [
+        "Haiti",
+        "Egypt"
+      ]
+    },
+    {
+      "name": "Dmitrijus Drozdovas",
+      "initials": "DD",
+      "teams": [
+        "Brazil"
+      ]
+    },
+    {
+      "name": "Daniel Weber",
+      "initials": "DW",
+      "teams": [
+        "Haiti",
+        "Norway"
+      ]
+    },
+    {
+      "name": "Robert Zapfel",
+      "initials": "RZ",
+      "teams": [
+        "Croatia"
+      ]
+    },
+    {
+      "name": "Dominic von Trotha Taylor",
+      "initials": "DT",
+      "teams": [
+        "Bosnia",
+        "South Korea"
+      ]
+    },
+    {
+      "name": "Celina Bellingham",
+      "initials": "CB",
+      "teams": [
+        "Jordan",
+        "Czechia"
+      ]
+    },
+    {
+      "name": "Dick Anning",
+      "initials": "DA",
+      "teams": [
+        "Uzbekistan",
+        "Canada"
+      ]
+    },
+    {
+      "name": "Trevor Willis",
+      "initials": "TW",
+      "teams": [
+        "France"
+      ]
+    },
+    {
+      "name": "Aadam Zakria",
+      "initials": "AZ",
+      "teams": [
+        "England"
+      ]
+    },
+    {
+      "name": "Jack Brinkhurst",
+      "initials": "JB",
+      "teams": [
+        "Ghana",
+        "Panama"
+      ]
+    },
+    {
+      "name": "Kris Rimar",
+      "initials": "KR",
+      "teams": [
+        "Cape Verde",
+        "Senegal"
+      ]
+    },
+    {
+      "name": "Michal Gluchaczka",
+      "initials": "MG",
+      "teams": [
+        "Paraguay",
+        "Cote d'Ivoire"
+      ]
+    },
+    {
+      "name": "Ronnie Nielsen",
+      "initials": "RN",
+      "teams": [
+        "Morocco",
+        "Saudi Arabia"
+      ]
+    },
+    {
+      "name": "Ruby Lin",
+      "initials": "RL",
+      "teams": [
+        "Curacao",
+        "South Africa"
+      ]
+    },
+    {
+      "name": "Souheil Ben Slama",
+      "initials": "SB",
+      "teams": [
+        "Portugal"
+      ]
+    },
+    {
+      "name": "Mohamed Ayadi",
+      "initials": "MA",
+      "teams": [
+        "Iraq",
+        "Switzerland"
+      ]
+    },
+    {
+      "name": "Delphine Suku",
+      "initials": "DS",
+      "teams": [
+        "Jordan",
+        "Scotland"
+      ]
+    }
   ],
   "groups": {
-    "A": ["Mexico", "South Korea", "Czechia", "South Africa"],
-    "B": ["Canada", "Switzerland", "Qatar", "Bosnia"],
-    "C": ["Brazil", "Morocco", "Scotland", "Haiti"],
-    "D": ["USA", "Paraguay", "Colombia", "Panama"],
-    "E": ["Germany", "Cote d'Ivoire", "Ecuador", "Curacao"],
-    "F": ["Netherlands", "Japan", "Sweden", "Tunisia"],
-    "G": ["Belgium", "Iran", "New Zealand", "Egypt"],
-    "H": ["Spain", "Saudi Arabia", "Uruguay", "Cape Verde"],
-    "I": ["France", "Iraq", "Norway", "Senegal"],
-    "J": ["Argentina", "Algeria", "Austria", "Jordan"],
-    "K": ["Portugal", "Turkey", "Ghana", "Uzbekistan"],
-    "L": ["England", "Croatia", "Australia", "Congo DR"]
+    "A": [
+      "Mexico",
+      "South Korea",
+      "Czechia",
+      "South Africa"
+    ],
+    "B": [
+      "Canada",
+      "Switzerland",
+      "Qatar",
+      "Bosnia"
+    ],
+    "C": [
+      "Brazil",
+      "Morocco",
+      "Scotland",
+      "Haiti"
+    ],
+    "D": [
+      "USA",
+      "Paraguay",
+      "Colombia",
+      "Panama"
+    ],
+    "E": [
+      "Germany",
+      "Cote d'Ivoire",
+      "Ecuador",
+      "Curacao"
+    ],
+    "F": [
+      "Netherlands",
+      "Japan",
+      "Sweden",
+      "Tunisia"
+    ],
+    "G": [
+      "Belgium",
+      "Iran",
+      "New Zealand",
+      "Egypt"
+    ],
+    "H": [
+      "Spain",
+      "Saudi Arabia",
+      "Uruguay",
+      "Cape Verde"
+    ],
+    "I": [
+      "France",
+      "Iraq",
+      "Norway",
+      "Senegal"
+    ],
+    "J": [
+      "Argentina",
+      "Algeria",
+      "Austria",
+      "Jordan"
+    ],
+    "K": [
+      "Portugal",
+      "Turkey",
+      "Ghana",
+      "Uzbekistan"
+    ],
+    "L": [
+      "England",
+      "Croatia",
+      "Australia",
+      "Congo DR"
+    ]
   },
   "scoring": {
     "groupWin": 3,
