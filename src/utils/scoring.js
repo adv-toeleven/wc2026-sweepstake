@@ -7,19 +7,26 @@ const S = sweepstake.scoring;
 
 // Knockout stages: points awarded only when the team WINS that match
 // (i.e. advances to the next round). The FINAL is special-cased below.
+// NOTE: football-data.org names the Round of 32 "LAST_32" (not "ROUND_OF_32");
+// both are accepted here so the app is robust to either spelling.
 const KNOCKOUT_WIN_POINTS = {
+  LAST_32: S.roundOf32,
   ROUND_OF_32: S.roundOf32,
   LAST_16: S.roundOf16,
   QUARTER_FINALS: S.quarterFinal,
   SEMI_FINALS: S.semiFinal
+  // THIRD_PLACE is intentionally omitted — the scoring scheme awards no points
+  // for the third-place playoff.
 };
 
 const STAGE_LABELS = {
   GROUP_STAGE: "Group Stage",
+  LAST_32: "Round of 32",
   ROUND_OF_32: "Round of 32",
   LAST_16: "Round of 16",
   QUARTER_FINALS: "Quarter-final",
   SEMI_FINALS: "Semi-final",
+  THIRD_PLACE: "Third-place playoff",
   FINAL: "Final"
 };
 
